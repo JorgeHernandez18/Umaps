@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umaps</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-div">
+            <h1>UMaps</h1>
+        </div>
+    </header>
+    <select name="lugar" id="lugar" class="lista" onchange="ShowSelected();">
+        <option value="">Selecciona</option>
+        <option value="entrada">Entrada</option>
+        <option value="auditorio">Auditorio</option>
+        <option value="funda">Fundadores</option>
+    	<option value="semi">Semipesados</option>
+        <option value="lab">Laboratorios</option>
+        <option value="sistemas">Sistemas - SA</option>
+        <option value="gallineros">Gallineros</option>
+        <option value="comu">Comunicación</option>
+        <option value="biblio">Biblioteca</option>
+    	<option value="che">Plaza del Che</option>
+    </select>
+    <div class="mapadiv">
+        <svg version="1.1" id="svg1" viewBox="0 0 768 891">
+            <defs id="defs1">
+                <linearGradient id="linearGradient16">
+                    <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop15" />
+                    <stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="stop16" />
+                </linearGradient>
+                <radialGradient xlink:href="#linearGradient16" id="radialGradient16" cx="122.97933" cy="766.84315" fx="122.97933" fy="766.84315" r="40.733675" gradientTransform="matrix(1,0,0,0.69033806,0,237.46214)" gradientUnits="userSpaceOnUse" />
+            </defs>
+            <g id="g1">
+            <a xlink:title="Entrada">
+                <path d="m 160.8082,794.44053 c 2.40013,-57.60294 2.40013,-52.80269 2.40013,-52.80269 l -74.403799,-2.40013 -6.000307,51.60264 z" id="entrada" />
+            </a>
+            <a xlink:title="Auditorio">
+                <path d="m 96.004898,607.23098 h 22.801162 l -3.60018,80.4041 -24.001227,-2.40012 -1.200061,30.00153 -79.204041,-1.20006 7.200367,-134.40686 80.404102,2.40012 z" id="auditorio" />
+            </a>
+            <a xlink:title="Fundadores">
+                <path d="M 122.40624,555.62835 18.000918,554.42829 25.201286,426.02173 127.20649,429.62192 Z" id="funda" />
+            </a>
+            <a xlink:title="Biblioteca">
+                <path d="m 188.40961,741.63784 3.60019,-103.20527 309.61579,6.00031 -3.60018,103.20526 z" id="biblio" />
+            </a>
+            <a xlink:title="Comunicación">
+                <path d="m 550.8281,616.83147 1.20006,134.40686 132.00674,4.80024 4.80024,-136.80698 z" id="comu" />
+            </a>
+            <a xlink:title="Sistemas - SA">
+                <path d="m 403.22057,333.61702 -2.40012,234.01194 79.20404,1.20006 2.40012,-234.01194 z" id="sistemas" />
+            </a>
+            <a xlink:title="Semipesados">
+                <path d="m 30.001531,254.41298 h 94.804839 l 2.40012,-111.60569 -102.005204,1.20006 z" id="semi" />
+            </a>
+            <a xlink:title="Laboratorios">
+                <path d="m 199.21016,254.41298 2.40013,-78.00398 154.80789,-1.20006 -4.80024,132.00673 -80.4041,-1.20006 2.40012,-51.60263 z" id="lab" />
+            </a>
+            <a xlink:title="Gallineros">
+                <path id="gallineros" d="m 664.52539,293.36133 c 0,0 2.35432,0.47007 -56.93945,27.80273 l 27.57812,76.47461 57.17774,-22.85937 z m -113.69727,18.65429 c 0,0 2.4003,4.3e-4 -50.40234,38.40235 l 42.00195,69.60351 51.60352,-33.60156 z m 143.57618,78.4004 -12.25,80.36523 70.75674,3.59123 4.7999,-81.22404 c 0,0 1.84401,1.53579 -63.30664,-2.73242 z m -125.41992,41.2246 c -10e-6,10e-6 2.37479,0.51544 -58.12891,27.10547 l 26.63086,77.80469 58.28515,-22.10547 z m 57.84179,37.5918 -26.86133,77.72461 59.55078,18.42188 29.81446,-81.76368 c 0,0 1.55562,1.86849 -62.50391,-14.38281 z" />
+            </a>
+            <a xlink:title="Plaza del Che">
+                <path id="che" d="m 202.81082,337.21714 v 92.40429 H 303.6155 v -92.40429 z m -19.20117,97.20507 v 88.80469 h 76.80273 v -88.80469 z m 127.80664,19.20118 a 45.002296,46.802387 0 0 0 -45.00196,46.80273 45.002296,46.802387 0 0 0 45.00196,46.80273 45.002296,46.802387 0 0 0 45.00195,-46.80273 45.002296,46.802387 0 0 0 -45.00195,-46.80273 z m -89.4043,100.80468 v 44.40235 h 127.20508 v -44.40235 z" />
+            </a>
+            </g>
+        </svg>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
